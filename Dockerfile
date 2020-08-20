@@ -1,5 +1,5 @@
 # .NET Core SDK as base image (see https://hub.docker.com/_/microsoft-dotnet-core-sdk)
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 
 # Install ReSharper CLTs (see https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html)
 RUN dotnet tool install -g JetBrains.ReSharper.GlobalTools
